@@ -1,0 +1,1657 @@
+  [1m[35m (8371.1ms)[0m  [1m[35mCREATE DATABASE "ficha_development" ENCODING = 'unicode'[0m
+  [1m[35m (7367.7ms)[0m  [1m[35mCREATE DATABASE "ficha_test" ENCODING = 'unicode'[0m
+  [1m[35m (85.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (155.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1209092605358936235)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 13:00:22.077981"], ["updated_at", "2019-09-03 13:00:22.077981"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1209092605358936235)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-03 09:01:44 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.8ms | Allocations: 465)
+Completed 200 OK in 71ms (Views: 49.9ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-09-03 09:01:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ficha_kines" for ::1 at 2019-09-03 09:01:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/ficha_kines"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1209092605358936235)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1209092605358936235)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1209092605358936235)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateKineFichas (20190903130449)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (223.1ms)[0m  [1m[35mCREATE TABLE "kine_fichas" ("id" bigserial primary key, "id_ficha_kine" integer, "id_ficha" integer, "riesgo" character varying, "nro_sesion" character varying, "id_especialista" integer, "ergo_fecha_ing" character varying, "ergo_fecha_egr" character varying, "ergo_vol_ing" integer, "ergo_vol_egr" integer, "ergo_voml_ing" integer, "ergo_voml_egr" integer, "ergo_fcmax_ing" integer, "ergo_fcmax_egr" integer, "ergo_pulso_ing" integer, "ergo_pulso_egr" integer, "ergo_ve_ing" integer, "ergo_ve_egr" integer, "ergo_mets_ing" integer, "ergo_mets_egr" integer, "shu_fecha_ing" character varying, "shu_fecha_egr" character varying, "shu_mts_ing" integer, "shu_mts_egr" integer, "shu_niv_ing" integer, "shu_niv_egr" integer, "shu_vol_ing" integer, "shu_vol_egr" integer, "shu_mets_ing" integer, "shu_mets_egr" integer, "shu_fcmax_ing" integer, "shu_fcmax_egr" integer, "shu_fcmt_ing" integer, "shu_fcmt_egr" integer, "shu_metsmax_ing" integer, "shu_metsmax_egr" integer, "id_reserva" integer, "tipo_evaluacion" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190903130449"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1209092605358936235)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-03 09:05:34 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 465)
+Completed 200 OK in 30ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/ficha_kines" for ::1 at 2019-09-03 09:05:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/ficha_kines"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:05:52 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.1ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 3.3ms | Allocations: 3705)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:10:14 -0400
+Processing by KineFichasController#index as */*
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms | Allocations: 923)
+
+
+Started POST "/kine_fichas" for ::1 at 2019-09-03 09:12:46 -0400
+Processing by KineFichasController#create as */*
+  Parameters: {"id_ficha_kine"=>1, "id_ficha"=>1, "riesgo"=>"Alta", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-14", "ergo_fecha_egr"=>"2019-01-14", "ergo_vol_ing"=>2.0, "ergo_vol_egr"=>2.0, "ergo_voml_ing"=>3.0, "ergo_voml_egr"=>3.0, "ergo_fcmax_ing"=>4.0, "ergo_fcmax_egr"=>4.0, "ergo_pulso_ing"=>5.0, "ergo_pulso_egr"=>5.0, "ergo_ve_ing"=>6.0, "ergo_ve_egr"=>6.0, "ergo_mets_ing"=>7.0, "ergo_mets_egr"=>7.0, "shu_fecha_ing"=>"2019-01-14", "shu_fecha_egr"=>"2019-01-14", "shu_mts_ing"=>0.0, "shu_mts_egr"=>0.0, "shu_niv_ing"=>0.0, "shu_niv_egr"=>0.0, "shu_vol_ing"=>0.0, "shu_vol_egr"=>0.0, "shu_mets_ing"=>0.0, "shu_mets_egr"=>0.0, "shu_fcmax_ing"=>0.0, "shu_fcmax_egr"=>0.0, "shu_fcmt_ing"=>0.0, "shu_fcmt_egr"=>0.0, "shu_metsmax_ing"=>0.0, "shu_metsmax_egr"=>0.0, "id_reserva"=>42, "tipo_evaluacion"=>"Ergo", "kine_ficha"=>{"id_ficha_kine"=>1, "id_ficha"=>1, "riesgo"=>"Alta", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-14", "ergo_fecha_egr"=>"2019-01-14", "ergo_vol_ing"=>2.0, "ergo_vol_egr"=>2.0, "ergo_voml_ing"=>3.0, "ergo_voml_egr"=>3.0, "ergo_fcmax_ing"=>4.0, "ergo_fcmax_egr"=>4.0, "ergo_pulso_ing"=>5.0, "ergo_pulso_egr"=>5.0, "ergo_ve_ing"=>6.0, "ergo_ve_egr"=>6.0, "ergo_mets_ing"=>7.0, "ergo_mets_egr"=>7.0, "shu_fecha_ing"=>"2019-01-14", "shu_fecha_egr"=>"2019-01-14", "shu_mts_ing"=>0.0, "shu_mts_egr"=>0.0, "shu_niv_ing"=>0.0, "shu_niv_egr"=>0.0, "shu_vol_ing"=>0.0, "shu_vol_egr"=>0.0, "shu_mets_ing"=>0.0, "shu_mets_egr"=>0.0, "shu_fcmax_ing"=>0.0, "shu_fcmax_egr"=>0.0, "shu_fcmt_ing"=>0.0, "shu_fcmt_egr"=>0.0, "shu_metsmax_ing"=>0.0, "shu_metsmax_egr"=>0.0, "id_reserva"=>42, "tipo_evaluacion"=>"Ergo"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (2.3ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("id_ficha_kine", "id_ficha", "riesgo", "id_especialista", "ergo_fecha_ing", "ergo_fecha_egr", "ergo_vol_ing", "ergo_vol_egr", "ergo_voml_ing", "ergo_voml_egr", "ergo_fcmax_ing", "ergo_fcmax_egr", "ergo_pulso_ing", "ergo_pulso_egr", "ergo_ve_ing", "ergo_ve_egr", "ergo_mets_ing", "ergo_mets_egr", "shu_fecha_ing", "shu_fecha_egr", "shu_mts_ing", "shu_mts_egr", "shu_niv_ing", "shu_niv_egr", "shu_vol_ing", "shu_vol_egr", "shu_mets_ing", "shu_mets_egr", "shu_fcmax_ing", "shu_fcmax_egr", "shu_fcmt_ing", "shu_fcmt_egr", "shu_metsmax_ing", "shu_metsmax_egr", "id_reserva", "tipo_evaluacion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38) RETURNING "id"[0m  [["id_ficha_kine", 1], ["id_ficha", 1], ["riesgo", "Alta"], ["id_especialista", 20], ["ergo_fecha_ing", "2019-01-14"], ["ergo_fecha_egr", "2019-01-14"], ["ergo_vol_ing", 2], ["ergo_vol_egr", 2], ["ergo_voml_ing", 3], ["ergo_voml_egr", 3], ["ergo_fcmax_ing", 4], ["ergo_fcmax_egr", 4], ["ergo_pulso_ing", 5], ["ergo_pulso_egr", 5], ["ergo_ve_ing", 6], ["ergo_ve_egr", 6], ["ergo_mets_ing", 7], ["ergo_mets_egr", 7], ["shu_fecha_ing", "2019-01-14"], ["shu_fecha_egr", "2019-01-14"], ["shu_mts_ing", 0], ["shu_mts_egr", 0], ["shu_niv_ing", 0], ["shu_niv_egr", 0], ["shu_vol_ing", 0], ["shu_vol_egr", 0], ["shu_mets_ing", 0], ["shu_mets_egr", 0], ["shu_fcmax_ing", 0], ["shu_fcmax_egr", 0], ["shu_fcmt_ing", 0], ["shu_fcmt_egr", 0], ["shu_metsmax_ing", 0], ["shu_metsmax_egr", 0], ["id_reserva", 42], ["tipo_evaluacion", "Ergo"], ["created_at", "2019-09-03 13:12:46.334355"], ["updated_at", "2019-09-03 13:12:46.334355"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 51ms (Views: 1.5ms | ActiveRecord: 7.3ms | Allocations: 30876)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:12:55 -0400
+Processing by KineFichasController#index as */*
+  Parameters: {"id_ficha_kine"=>1, "id_ficha"=>1, "riesgo"=>"Alta", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-14", "ergo_fecha_egr"=>"2019-01-14", "ergo_vol_ing"=>2.0, "ergo_vol_egr"=>2.0, "ergo_voml_ing"=>3.0, "ergo_voml_egr"=>3.0, "ergo_fcmax_ing"=>4.0, "ergo_fcmax_egr"=>4.0, "ergo_pulso_ing"=>5.0, "ergo_pulso_egr"=>5.0, "ergo_ve_ing"=>6.0, "ergo_ve_egr"=>6.0, "ergo_mets_ing"=>7.0, "ergo_mets_egr"=>7.0, "shu_fecha_ing"=>"2019-01-14", "shu_fecha_egr"=>"2019-01-14", "shu_mts_ing"=>0.0, "shu_mts_egr"=>0.0, "shu_niv_ing"=>0.0, "shu_niv_egr"=>0.0, "shu_vol_ing"=>0.0, "shu_vol_egr"=>0.0, "shu_mets_ing"=>0.0, "shu_mets_egr"=>0.0, "shu_fcmax_ing"=>0.0, "shu_fcmax_egr"=>0.0, "shu_fcmt_ing"=>0.0, "shu_fcmt_egr"=>0.0, "shu_metsmax_ing"=>0.0, "shu_metsmax_egr"=>0.0, "id_reserva"=>42, "tipo_evaluacion"=>"Ergo", "kine_ficha"=>{"id_ficha_kine"=>1, "id_ficha"=>1, "riesgo"=>"Alta", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-14", "ergo_fecha_egr"=>"2019-01-14", "ergo_vol_ing"=>2.0, "ergo_vol_egr"=>2.0, "ergo_voml_ing"=>3.0, "ergo_voml_egr"=>3.0, "ergo_fcmax_ing"=>4.0, "ergo_fcmax_egr"=>4.0, "ergo_pulso_ing"=>5.0, "ergo_pulso_egr"=>5.0, "ergo_ve_ing"=>6.0, "ergo_ve_egr"=>6.0, "ergo_mets_ing"=>7.0, "ergo_mets_egr"=>7.0, "shu_fecha_ing"=>"2019-01-14", "shu_fecha_egr"=>"2019-01-14", "shu_mts_ing"=>0.0, "shu_mts_egr"=>0.0, "shu_niv_ing"=>0.0, "shu_niv_egr"=>0.0, "shu_vol_ing"=>0.0, "shu_vol_egr"=>0.0, "shu_mets_ing"=>0.0, "shu_mets_egr"=>0.0, "shu_fcmax_ing"=>0.0, "shu_fcmax_egr"=>0.0, "shu_fcmt_ing"=>0.0, "shu_fcmt_egr"=>0.0, "shu_metsmax_ing"=>0.0, "shu_metsmax_egr"=>0.0, "id_reserva"=>42, "tipo_evaluacion"=>"Ergo"}}
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1432)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:13:56 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 1427)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 09:16:52 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 1427)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 09:16:55 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1413)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 09:17:42 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 09:25:14 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (2.0ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 2.0ms | Allocations: 1510)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 09:25:53 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 1409)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:31:36 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.0ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 38.8ms | ActiveRecord: 8.8ms | Allocations: 30826)
+
+
+Started GET "/" for ::1 at 2019-09-03 09:59:13 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.9ms | Allocations: 465)
+Completed 200 OK in 62ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+Started GET "/s" for ::1 at 2019-09-03 09:59:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/s"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for ::1 at 2019-09-03 09:59:38 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.2ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.2ms | Allocations: 1544)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 10:02:20 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 1419)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 10:02:40 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1425)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 10:03:04 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.0ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 1.0ms | Allocations: 1427)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-03 10:04:50 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 1409)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 09:15:39 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.2ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 1.2ms | Allocations: 1508)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-09-05 09:15:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:21:52 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.1ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 41.6ms | ActiveRecord: 8.1ms | Allocations: 30806)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:22:02 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.7ms | Allocations: 1427)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:30:46 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.1ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 52ms (Views: 39.3ms | ActiveRecord: 7.1ms | Allocations: 30824)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:30:53 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.1ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 1.1ms | Allocations: 1428)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:32:34 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.7ms | Allocations: 1429)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-05 18:32:35 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.6ms | Allocations: 1428)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:34:08 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 354ms (Views: 352.8ms | ActiveRecord: 0.6ms | Allocations: 1428)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-05 18:34:09 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.6ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:35:04 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.6ms | Allocations: 1414)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-05 18:35:05 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:35:52 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.6ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-05 18:35:53 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-05 18:41:02 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-05 18:41:02 -0400
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.6ms | Allocations: 1410)
+
+
+Started GET "/ficha_kines" for ::1 at 2019-09-09 18:40:56 -0300
+  [1m[35m (42.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ficha_kines"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-09-09 18:41:03 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:41:19 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (44.0ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 210ms (Views: 91.5ms | ActiveRecord: 114.8ms | Allocations: 30888)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:42:25 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.7ms | Allocations: 1428)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:44:10 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1428)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:44:26 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1412)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:44:34 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1425)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:44:43 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.6ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:48:00 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:48:10 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:48:21 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:48:29 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:48:45 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (3.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 3.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:52:05 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:52:12 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:53:25 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.6ms | Allocations: 1411)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:54:16 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.7ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:54:34 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 18:59:51 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.9ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.9ms | Allocations: 1410)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-09 19:19:46 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 31.8ms | ActiveRecord: 7.3ms | Allocations: 30814)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 19:53:35 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.9ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 1.9ms | Allocations: 1523)
+
+
+Started POST "/kine_fichas" for ::1 at 2019-09-09 20:35:15 -0300
+Processing by KineFichasController#create as */*
+  Parameters: {"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva", "kine_ficha"=>{"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva"}}
+  [1m[35m (16.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (308.8ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("id_ficha_kine", "riesgo", "id_especialista", "ergo_fecha_ing", "ergo_fecha_egr", "ergo_vol_ing", "ergo_vol_egr", "ergo_voml_ing", "ergo_voml_egr", "ergo_fcmax_ing", "ergo_fcmax_egr", "ergo_pulso_ing", "ergo_pulso_egr", "ergo_ve_ing", "ergo_ve_egr", "ergo_mets_ing", "ergo_mets_egr", "shu_fecha_ing", "shu_fecha_egr", "shu_mts_ing", "shu_mts_egr", "shu_niv_ing", "shu_niv_egr", "shu_vol_ing", "shu_vol_egr", "shu_mets_ing", "shu_mets_egr", "shu_fcmax_ing", "shu_fcmax_egr", "shu_fcmt_ing", "shu_fcmt_egr", "shu_metsmax_ing", "shu_metsmax_egr", "id_reserva", "tipo_evaluacion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37) RETURNING "id"[0m  [["id_ficha_kine", 2], ["riesgo", "no"], ["id_especialista", 20], ["ergo_fecha_ing", "2019-01-01"], ["ergo_fecha_egr", "2019-01-01"], ["ergo_vol_ing", 1], ["ergo_vol_egr", 1], ["ergo_voml_ing", 1], ["ergo_voml_egr", 1], ["ergo_fcmax_ing", 1], ["ergo_fcmax_egr", 1], ["ergo_pulso_ing", 1], ["ergo_pulso_egr", 1], ["ergo_ve_ing", 1], ["ergo_ve_egr", 1], ["ergo_mets_ing", 1], ["ergo_mets_egr", 1], ["shu_fecha_ing", "2019-01-01"], ["shu_fecha_egr", "2019-01-01"], ["shu_mts_ing", 1], ["shu_mts_egr", 1], ["shu_niv_ing", 1], ["shu_niv_egr", 1], ["shu_vol_ing", 1], ["shu_vol_egr", 1], ["shu_mets_ing", 1], ["shu_mets_egr", 1], ["shu_fcmax_ing", 1], ["shu_fcmax_egr", 1], ["shu_fcmt_ing", 1], ["shu_fcmt_egr", 1], ["shu_metsmax_ing", 1], ["shu_metsmax_egr", 1], ["id_reserva", 43], ["tipo_evaluacion", "preventiva"], ["created_at", "2019-09-09 23:35:15.766515"], ["updated_at", "2019-09-09 23:35:15.766515"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 349ms (Views: 3.2ms | ActiveRecord: 326.1ms | Allocations: 4266)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-09 20:35:40 -0300
+Processing by KineFichasController#index as */*
+  Parameters: {"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva", "kine_ficha"=>{"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva"}}
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.7ms | Allocations: 1977)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 20:36:27 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.6ms | Allocations: 1916)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-09 21:01:53 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.5ms | Allocations: 2011)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 21:02:50 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.0ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 1.0ms | Allocations: 1903)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 21:02:52 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.6ms | Allocations: 1898)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-09 21:02:53 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.8ms | Allocations: 1898)
+
+
+Started GET "/" for ::1 at 2019-09-12 10:55:39 -0300
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.8ms | Allocations: 465)
+Completed 200 OK in 71ms (Views: 49.9ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-09-12 10:55:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-12 10:59:01 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (8.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 84ms (Views: 38.6ms | ActiveRecord: 40.4ms | Allocations: 31302)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 11:52:20 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.3ms | Allocations: 2011)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 12:37:01 -0300
+Started GET "/kine_fichas" for ::1 at 2019-09-12 12:37:01 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+Processing by KineFichasController#index as */*
+  [1m[36mKineFicha Load (1.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+  [1m[36mKineFicha Load (2.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 55ms (Views: 43.4ms | ActiveRecord: 8.0ms | Allocations: 32249)
+
+
+Completed 200 OK in 58ms (Views: 8.4ms | ActiveRecord: 45.5ms | Allocations: 33409)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 12:43:12 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"userName"=>"antonella", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"anto@gmail.com", "subscribe"=>false, "address"=>{"city"=>"", "state"=>"", "postalCode"=>""}, "alternateEmails"=>[], "kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 12:54:32 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"userName"=>"Bruce", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "subscribe"=>false, "address"=>{"city"=>"", "state"=>"", "postalCode"=>""}, "alternateEmails"=>[], "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 157)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:08:32 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"userName"=>"antonella", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "subscribe"=>false, "address"=>{"city"=>"", "state"=>"", "postalCode"=>""}, "alternateEmails"=>[], "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:13:48 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"userName"=>"sasas", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"sasas", "subscribe"=>false, "address"=>{"city"=>"", "state"=>"", "postalCode"=>""}, "alternateEmails"=>[], "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:35:47 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (16.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (167.1ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:35:47.978547"], ["updated_at", "2019-09-12 16:35:47.978547"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 227ms (Views: 9.7ms | ActiveRecord: 184.9ms | Allocations: 3365)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:35:48 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.7ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:35:48.724855"], ["updated_at", "2019-09-12 16:35:48.724855"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 25ms (Views: 1.7ms | ActiveRecord: 12.5ms | Allocations: 3023)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:35:48 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.5ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:35:49.111134"], ["updated_at", "2019-09-12 16:35:49.111134"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 19ms (Views: 1.3ms | ActiveRecord: 1.6ms | Allocations: 3007)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:36:01 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.5ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:36:01.183082"], ["updated_at", "2019-09-12 16:36:01.183082"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 19ms (Views: 0.9ms | ActiveRecord: 10.1ms | Allocations: 3015)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:43:39 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (1.3ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:43:39.330241"], ["updated_at", "2019-09-12 16:43:39.330241"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 13ms (Views: 1.1ms | ActiveRecord: 2.4ms | Allocations: 3033)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:43:40 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (34.2ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:43:40.807180"], ["updated_at", "2019-09-12 16:43:40.807180"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 46ms (Views: 1.2ms | ActiveRecord: 35.1ms | Allocations: 3007)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:43:41 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.4ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:43:41.142245"], ["updated_at", "2019-09-12 16:43:41.142245"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 1.4ms | ActiveRecord: 2.6ms | Allocations: 3007)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:44:19 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (29.3ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:44:19.424696"], ["updated_at", "2019-09-12 16:44:19.424696"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 43ms (Views: 1.5ms | ActiveRecord: 30.1ms | Allocations: 3007)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:46:04 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (6.5ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:46:04.639355"], ["updated_at", "2019-09-12 16:46:04.639355"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 35ms (Views: 1.5ms | ActiveRecord: 7.5ms | Allocations: 3007)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 13:47:24 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.8ms | Allocations: 6105)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:48:34 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.6ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:48:34.250336"], ["updated_at", "2019-09-12 16:48:34.250336"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (28.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 42ms (Views: 1.5ms | ActiveRecord: 29.5ms | Allocations: 3007)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 13:48:42 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 6465)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 13:49:16 -0300
+Processing by KineFichasController#index as */*
+  Parameters: {"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva", "kine_ficha"=>{"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva"}}
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.6ms | Allocations: 6462)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 13:55:05 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (1.0ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 16:55:05.880303"], ["updated_at", "2019-09-12 16:55:05.880303"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.9ms | ActiveRecord: 2.4ms | Allocations: 3031)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 13:55:15 -0300
+Processing by KineFichasController#index as */*
+  Parameters: {"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva", "kine_ficha"=>{"id_ficha_kine"=>2, "id_ficha"=>nil, "riesgo"=>"no", "nro_sesion"=>nil, "id_especialista"=>20, "ergo_fecha_ing"=>"2019-01-01", "ergo_fecha_egr"=>"2019-01-01", "ergo_vol_ing"=>1.0, "ergo_vol_egr"=>1.0, "ergo_voml_ing"=>1.0, "ergo_voml_egr"=>1.0, "ergo_fcmax_ing"=>1.0, "ergo_fcmax_egr"=>1.0, "ergo_pulso_ing"=>1.0, "ergo_pulso_egr"=>1.0, "ergo_ve_ing"=>1.0, "ergo_ve_egr"=>1.0, "ergo_mets_ing"=>1.0, "ergo_mets_egr"=>1.0, "shu_fecha_ing"=>"2019-01-01", "shu_fecha_egr"=>"2019-01-01", "shu_mts_ing"=>1.0, "shu_mts_egr"=>1.0, "shu_niv_ing"=>1.0, "shu_niv_egr"=>1.0, "shu_vol_ing"=>1.0, "shu_vol_egr"=>1.0, "shu_mets_ing"=>1.0, "shu_mets_egr"=>1.0, "shu_fcmax_ing"=>1.0, "shu_fcmax_egr"=>1.0, "shu_fcmt_ing"=>1.0, "shu_fcmt_egr"=>1.0, "shu_metsmax_ing"=>1.0, "shu_metsmax_egr"=>1.0, "id_reserva"=>43, "tipo_evaluacion"=>"preventiva"}}
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.8ms | Allocations: 6995)
+
+
+Started POST "/kine_fichas" for ::1 at 2019-09-12 14:50:14 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>"", "kine_ficha"=>{"id"=>"", "id_ficha_kine"=>"", "id_ficha"=>"", "riesgo"=>"", "nro_sesion"=>""}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (1.6ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("riesgo", "nro_sesion", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["riesgo", ""], ["nro_sesion", ""], ["created_at", "2019-09-12 17:50:14.979233"], ["updated_at", "2019-09-12 17:50:14.979233"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 1.6ms | ActiveRecord: 2.7ms | Allocations: 3030)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 14:50:20 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.8ms | Allocations: 7453)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 14:51:46 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 137)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 14:51:59 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 137)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started GET "/kine_fichas" for ::1 at 2019-09-12 14:52:20 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 7371)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 14:53:03 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>0, "id_ficha_kine"=>0, "id_ficha"=>0, "riesgo"=>"", "nro_sesion"=>0, "id_especialista"=>0, "kine_ficha"=>{"id"=>0, "id_ficha_kine"=>0, "id_ficha"=>0, "riesgo"=>"", "nro_sesion"=>0, "id_especialista"=>0}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (0.5ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("id_ficha_kine", "id_ficha", "riesgo", "nro_sesion", "id_especialista", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id_ficha_kine", 0], ["id_ficha", 0], ["riesgo", ""], ["nro_sesion", "0"], ["id_especialista", 0], ["created_at", "2019-09-12 17:53:03.990332"], ["updated_at", "2019-09-12 17:53:03.990332"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 1.0ms | ActiveRecord: 2.7ms | Allocations: 3062)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 14:53:06 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.5ms | Allocations: 7828)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-12 14:58:58 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"id"=>0, "id_ficha_kine"=>0, "id_ficha"=>0, "riesgo"=>"", "nro_sesion"=>0, "id_especialista"=>0, "kine_ficha"=>{"id"=>0, "id_ficha_kine"=>0, "id_ficha"=>0, "riesgo"=>"", "nro_sesion"=>0, "id_especialista"=>0}}
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[36mKineFicha Create (2.7ms)[0m  [1m[32mINSERT INTO "kine_fichas" ("id_ficha_kine", "id_ficha", "riesgo", "nro_sesion", "id_especialista", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id_ficha_kine", 0], ["id_ficha", 0], ["riesgo", ""], ["nro_sesion", "0"], ["id_especialista", 0], ["created_at", "2019-09-12 17:58:58.948022"], ["updated_at", "2019-09-12 17:58:58.948022"]]
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/kine_fichas_controller.rb:20:in `create'
+Completed 201 Created in 24ms (Views: 3.6ms | ActiveRecord: 3.9ms | Allocations: 3081)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 14:59:09 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.9ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.9ms | Allocations: 8361)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 15:58:17 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (39.2ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 877ms (Views: 782.3ms | ActiveRecord: 39.2ms | Allocations: 8385)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:02:10 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 581ms (Views: 579.2ms | ActiveRecord: 0.8ms | Allocations: 8284)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:02:35 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.8ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 166ms (Views: 164.5ms | ActiveRecord: 0.8ms | Allocations: 8284)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:02:58 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 203ms (Views: 202.2ms | ActiveRecord: 0.7ms | Allocations: 8284)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:03:17 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (4.2ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 625ms (Views: 620.9ms | ActiveRecord: 4.2ms | Allocations: 8288)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:16:06 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (301.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 2700ms (Views: 2397.8ms | ActiveRecord: 301.5ms | Allocations: 8399)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:19:05 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 234ms (Views: 232.6ms | ActiveRecord: 0.7ms | Allocations: 8284)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:20:10 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.5ms | Allocations: 8284)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:25:02 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.7ms | Allocations: 8286)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 16:31:22 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 1.7ms | Allocations: 8383)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 17:29:58 -0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 276ms (Views: 215.6ms | ActiveRecord: 53.0ms | Allocations: 37690)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 18:07:44 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (2.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 2.3ms | Allocations: 8397)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-12 18:13:18 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.4ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 1.4ms | Allocations: 8397)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-25 21:32:41 -0300
+  [1m[35m (95.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (64.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 173ms (Views: 68.8ms | ActiveRecord: 99.1ms | Allocations: 37689)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-25 21:39:31 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (1.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.3ms | Allocations: 8398)
+
+
+Started GET "/formulario" for 127.0.0.1 at 2019-09-27 03:20:19 -0300
+Started GET "/formulario" for 127.0.0.1 at 2019-09-27 03:20:19 -0300
+  [1m[35m (22.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (35.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/formulario"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/formulario"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-27 03:27:01 -0300
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-27 03:27:01 -0300
+Processing by KineFichasController#index as HTML
+Processing by KineFichasController#index as */*
+  [1m[36mKineFicha Load (53.7ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  [1m[36mKineFicha Load (54.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 511ms (Views: 227.4ms | ActiveRecord: 268.3ms | Allocations: 44776)
+
+
+Completed 200 OK in 511ms (Views: 204.5ms | ActiveRecord: 293.5ms | Allocations: 46248)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-27 18:07:12 -0300
+  [1m[35m (69.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 34.4ms | Allocations: 465)
+Completed 200 OK in 124ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/kine_fichas" for 127.0.0.1 at 2019-09-27 18:07:24 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (65.3ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 315ms (Views: 81.1ms | ActiveRecord: 229.4ms | Allocations: 37714)
+
+
+Started GET "/kine_fichas" for ::1 at 2019-09-27 18:08:19 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.5ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.5ms | Allocations: 8302)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 18:13:51 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"anto", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"anto@gmail.com", "subscribe"=>false, "kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started GET "/kine_fichas" for ::1 at 2019-09-27 18:14:31 -0300
+Processing by KineFichasController#index as HTML
+  [1m[36mKineFicha Load (0.6ms)[0m  [1m[34mSELECT "kine_fichas".* FROM "kine_fichas"[0m
+  ↳ app/controllers/kine_fichas_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.6ms | Allocations: 8322)
+
+
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 18:20:57 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"anto", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"anto@gmail.com", "subscribe"=>false, "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 145)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 19:07:12 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"Antonella", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"antonella@gmail.com", "kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 143)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 19:19:29 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 19:19:55 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "kine_ficha"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 19:20:04 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+Started POST "/kine_fichas" for 127.0.0.1 at 2019-09-27 19:24:12 -0300
+Processing by KineFichasController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "kine_ficha"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: kine_ficha):
+  
+app/controllers/kine_fichas_controller.rb:49:in `kine_ficha_params'
+app/controllers/kine_fichas_controller.rb:18:in `create'
+  [1m[35m (24.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1209092605358936235)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRegistros (20190927222827)
+  [1m[35m (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (716.1ms)[0m  [1m[35mCREATE TABLE "registros" ("id" bigserial primary key, "nombre" character varying, "contraseña" character varying, "confirmarcontraseña" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (44.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927222827"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (30.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1209092605358936235)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/registros" for ::1 at 2019-09-27 19:29:48 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (1.1ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 2.6ms | Allocations: 1873)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-09-27 19:29:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 19:30:21 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "registro"=>{"email"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (41.8ms)[0m  [1m[32mINSERT INTO "registros" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", ""], ["created_at", "2019-09-27 22:30:21.886428"], ["updated_at", "2019-09-27 22:30:21.886428"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 64ms (Views: 1.1ms | ActiveRecord: 47.1ms | Allocations: 7634)
+
+
+Started GET "/registros" for ::1 at 2019-09-27 19:30:26 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (0.4ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.4ms | Allocations: 1003)
+
+
+Started GET "/registros" for 127.0.0.1 at 2019-09-27 19:33:33 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (0.9ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 21.1ms | ActiveRecord: 8.2ms | Allocations: 7017)
+
+
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 19:38:11 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "registro"=>{"email"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (1.1ms)[0m  [1m[32mINSERT INTO "registros" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", ""], ["created_at", "2019-09-27 22:38:11.879033"], ["updated_at", "2019-09-27 22:38:11.879033"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 29ms (Views: 1.4ms | ActiveRecord: 2.5ms | Allocations: 2687)
+
+
+Started GET "/registros" for ::1 at 2019-09-27 19:38:14 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (0.5ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 1139)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1209092605358936235)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFormularios (20190928002549)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCREATE TABLE "formularios" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928002549"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1209092605358936235)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/formulario" for ::1 at 2019-09-27 21:27:08 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/formulario"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/formulario" for ::1 at 2019-09-27 21:27:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/formulario"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/formulario" for ::1 at 2019-09-27 21:27:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/formulario"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/formularios" for ::1 at 2019-09-27 21:27:56 -0300
+Processing by FormulariosController#index as HTML
+  [1m[36mFormulario Load (1.2ms)[0m  [1m[34mSELECT "formularios".* FROM "formularios"[0m
+  ↳ app/controllers/formularios_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 8.0ms | ActiveRecord: 2.7ms | Allocations: 1744)
+
+
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 21:29:30 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "registro"=>{"email"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (1.3ms)[0m  [1m[32mINSERT INTO "registros" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", ""], ["created_at", "2019-09-28 00:29:30.171707"], ["updated_at", "2019-09-28 00:29:30.171707"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 57ms (Views: 1.4ms | ActiveRecord: 27.7ms | Allocations: 7658)
+
+
+Started GET "/formularios" for ::1 at 2019-09-27 21:29:34 -0300
+Processing by FormulariosController#index as HTML
+  [1m[36mFormulario Load (0.4ms)[0m  [1m[34mSELECT "formularios".* FROM "formularios"[0m
+  ↳ app/controllers/formularios_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 822)
+
+
+Started POST "/formularios" for 127.0.0.1 at 2019-09-27 21:30:22 -0300
+Processing by FormulariosController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "formulario"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 149)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: formulario):
+  
+app/controllers/formularios_controller.rb:49:in `formulario_params'
+app/controllers/formularios_controller.rb:18:in `create'
+Started GET "/formularios" for ::1 at 2019-09-27 21:31:06 -0300
+Processing by FormulariosController#index as HTML
+  [1m[36mFormulario Load (0.4ms)[0m  [1m[34mSELECT "formularios".* FROM "formularios"[0m
+  ↳ app/controllers/formularios_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 824)
+
+
+Started POST "/formularios" for 127.0.0.1 at 2019-09-27 21:31:23 -0300
+Processing by FormulariosController#create as HTML
+  Parameters: {"Nombre"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "email"=>"", "formulario"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: formulario):
+  
+app/controllers/formularios_controller.rb:49:in `formulario_params'
+app/controllers/formularios_controller.rb:18:in `create'
+Started GET "/formularios" for ::1 at 2019-09-27 21:32:51 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant FormulariosController):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/registros" for ::1 at 2019-09-27 21:32:58 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (1.1ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 6.1ms | Allocations: 7400)
+
+
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 21:39:19 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>"", "registro"=>{"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (1.0ms)[0m  [1m[32mINSERT INTO "registros" ("nombre", "contraseña", "confirmarcontraseña", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nombre", ""], ["contraseña", ""], ["confirmarcontraseña", ""], ["email", ""], ["created_at", "2019-09-28 00:39:19.265431"], ["updated_at", "2019-09-28 00:39:19.265431"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 89ms (Views: 1.3ms | ActiveRecord: 2.7ms | Allocations: 2821)
+
+
+Started GET "/registros" for ::1 at 2019-09-27 21:39:34 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (1.0ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 1.0ms | Allocations: 1518)
+
+
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 21:41:37 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>"", "registro"=>{"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (0.5ms)[0m  [1m[32mINSERT INTO "registros" ("nombre", "contraseña", "confirmarcontraseña", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nombre", ""], ["contraseña", ""], ["confirmarcontraseña", ""], ["email", ""], ["created_at", "2019-09-28 00:41:38.112294"], ["updated_at", "2019-09-28 00:41:38.112294"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 41ms (Views: 0.9ms | ActiveRecord: 1.2ms | Allocations: 2511)
+
+
+Started GET "/registros" for ::1 at 2019-09-27 21:41:42 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (0.5ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.5ms | Allocations: 1635)
+
+
+Started POST "/registros" for 127.0.0.1 at 2019-09-27 22:14:15 -0300
+Processing by RegistrosController#create as HTML
+  Parameters: {"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>"", "registro"=>{"nombre"=>"", "contraseña"=>"", "confirmarcontraseña"=>"", "email"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[36mRegistro Create (1.2ms)[0m  [1m[32mINSERT INTO "registros" ("nombre", "contraseña", "confirmarcontraseña", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nombre", ""], ["contraseña", ""], ["confirmarcontraseña", ""], ["email", ""], ["created_at", "2019-09-28 01:14:15.330427"], ["updated_at", "2019-09-28 01:14:15.330427"]]
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registros_controller.rb:20:in `create'
+Completed 201 Created in 28ms (Views: 1.1ms | ActiveRecord: 3.4ms | Allocations: 2535)
+
+
+Started GET "/registros" for ::1 at 2019-09-27 22:14:18 -0300
+Processing by RegistrosController#index as HTML
+  [1m[36mRegistro Load (0.6ms)[0m  [1m[34mSELECT "registros".* FROM "registros"[0m
+  ↳ app/controllers/registros_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms | Allocations: 1848)
+
+
